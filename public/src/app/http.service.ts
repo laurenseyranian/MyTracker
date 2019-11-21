@@ -6,9 +6,14 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HttpService {
 
-    constructor(private _http: HttpClient) { }
+  constructor(private _http: HttpClient) { }
 
-    homePage() {
-        return this._http.get('/home_json');
-    }
+  calendarPage(){
+    return this._http.get('/calendar_json');
+  }
+
+  homePage() {
+      return this._http.get('/home_json');
+  }
+
 }
