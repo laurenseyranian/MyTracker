@@ -10,6 +10,7 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { MonthCalendarModule } from 'simple-angular-calendar';
 import { HomeComponent } from './home/home.component';
 import { LogComponent } from './log/log.component';
+import { EditLogComponent } from './edit-log/edit-log.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { LogComponent } from './log/log.component';
     CalendarComponent,
     HomeComponent,
     LogComponent,
+    EditLogComponent,
   ],
   imports: [
     BrowserModule,

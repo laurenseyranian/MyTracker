@@ -1,0 +1,6 @@
+.homeImage{
+    height:100vw;
+    background-size:cover; width:auto;
+    background-image:url('/assets/images/home.jpg');
+    background-position:50% 50%;
+  }

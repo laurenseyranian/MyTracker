@@ -9,6 +9,7 @@ import { LogComponent } from './log/log.component';
 
 const routes: Routes = [
   {path:'calendar', component:CalendarComponent},
+  {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'foodlog', component: LogComponent},
 
