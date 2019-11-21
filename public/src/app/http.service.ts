@@ -15,6 +15,7 @@ export class HttpService {
   homePage() {
     return this._http.get('/home_json');
   }
+  
   log() {
     return this._http.get('/log_json');
   }

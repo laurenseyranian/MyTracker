@@ -9,14 +9,14 @@ app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static( __dirname + '/public/dist/public' ));
+app.use('/foodlogs_json', require('./server/config/routes/routes'));
 
 
 mongoose.connect('mongodb://localhost/tracker_db', { useNewUrlParser: true });
 
 require('./server/models/models.js')
-require('./server/config/mongoose.js')
 require('./server/config/routes.js')(app)
-
+require('./server/config/routes/database');
 
 app.all("*", (req,res,next) => {
     res.sendFile(path.resolve("./public/dist/public/index.html"))});
