@@ -9,12 +9,14 @@ import { CalendarModule } from 'angular-calendar';
 import { CalendarComponent } from './calendar/calendar.component';
 import { MonthCalendarModule } from 'simple-angular-calendar';
 import { HomeComponent } from './home/home.component';
+import { LogComponent } from './log/log.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalendarComponent,
     HomeComponent,
+    LogComponent,
   ],
   imports: [
     BrowserModule,
