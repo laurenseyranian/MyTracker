@@ -4,7 +4,7 @@ const router = require('express').Router();
 
 module.exports = router
     .get('/', controller.index)
-    .get('/', controller.read_all)
+    .get('/calendar', controller.read_all)
     .post('/new', controller.create)
     .get('/:id', controller.read_one)
     .put('/:id/edit', controller.update)
