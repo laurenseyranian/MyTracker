@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpService } from '../http.service';
 
 @Component({
   selector: 'app-calendar',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalendarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _httpService: HttpService) { }
+
+  foodlogs: any;
+  foodlog: any;
 
   ngOnInit() {
+    this.getAllFoodLogs();
+  }
+  getAllFoodLogs(){
+    console.log("in component, calendar: ", this.foodlogs)
+    let observable = this._httpService.readFoodlogs();
+    observable.subscribe(data => {
+      console.log("Got our foodlogs!", data)
+      this.foodlogs = data;
+    });
   }
 
 }

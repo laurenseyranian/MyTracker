@@ -1,7 +1,29 @@
-<p class="text-center" id='title'>CALENDAR STOP</p>
-<div class="wrapper-vertically-limited ">
-    <sc-month-calendar [monthClass]="'custom-month'" [monthCaptionClass]="'custom-month__caption'"
-        [dayOfWeekCaptionClass]="'custom-month__week-caption'" [dayCaptionClass]="'custom-month__day'"
-        [currentDayClass]="'custom-month__day--today'" [selectedDayClass]="'custom-month__day--selected'">
-    </sc-month-calendar>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Breakfast</th>
+                <th scope="col">Snack</th>
+                <th scope="col">Lunch</th>
+                <th scope="col">Snack</th>
+                <th scope="col">Dinner</th>
+                <th scope="col">Snack</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- FOR LOOP -->
+
+            <tr *ngFor="let foodlog of foodlogs">
+                <td>{{ foodlog.date }}</td>
+                <td>{{ foodlog.breakfast }}</td>
+                <td>{{ foodlog.am_snack }}</td>
+                <td>{{ foodlog.lunch }}</td>
+                <td>{{ foodlog.pm_snack }}</td>
+                <td>{{ foodlog.dinner }}</td>
+                <td>{{ foodlog.bedtime_snack }}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
