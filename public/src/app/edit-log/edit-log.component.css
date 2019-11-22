@@ -1,0 +1,47 @@
+.logImage{
+    background-image:url('/assets/images/plate.png');
+    background-size:cover;
+    background-position:50% 50%;
+    margin-left: 370px;
+    width: 680px;
+    height: 680px;
+}
+#title{
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 80px;
+    color: #80C141;
+    margin-top: -130px;
+}
+.box{
+    margin-left: 160px;
+    margin-top: 10px;
+    width: 400px;
+    height: 200px;
+}
+.date{
+    padding-top: 105px;
+}
+.boxText{
+    transform: rotate(-180deg);
+    writing-mode: vertical-rl;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    color: #177890;
+}
+.boxText1{
+    transform: rotate(-180deg);
+    writing-mode: vertical-lr;
+    color: #177890;
+    margin-left: 60px;
+}
+.button{
+    background-color: #80C141;
+    color: white;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+.lunchy{
+    margin-bottom: 18px;
+}
+.dinny{
+    margin-bottom: 17px;
+}

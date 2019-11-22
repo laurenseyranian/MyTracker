@@ -25,7 +25,7 @@ export class ViewLogComponent implements OnInit {
     this.readFoodlog();
   }
   readFoodlog() {
-    console.log("in component, a-update: ", this.foodlogId)
+    console.log("in component, view-log: ", this.foodlogId)
     let observable = this._httpService.readFoodlog(this.foodlogId);
     observable.subscribe(data => {
       this.foodlog = data;
