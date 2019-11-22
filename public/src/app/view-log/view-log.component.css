@@ -1,0 +1,8 @@
+.plateImage{
+    background-image:url('/assets/images/plate.png');
+    background-size:cover;
+    background-position:50% 50%;
+    margin-left: 370px;
+    width: 680px;
+    height: 680px;
+}

@@ -4,13 +4,20 @@
     color: #80C141;
     margin-top: -130px;
 }
-.wrapper-vertically-limited {
-    margin-left: 70px;
-    width: 1300px;
-    height: 600px;
-    background-color: #177890b4;
+.journalImage{
+    background-image:url('/assets/images/journal.jpg');
+    background-size:cover;
+    background-position:303% 303%;
+    margin-left: 220px;
+    border-radius: 10px;
+    width: 1000px;
+    height: 1000px;
     margin-top: -20px;
-    font-size: 30px;
+}
+p{
+    font-size: 20px;
+    color: #177890;
+    margin-left: 50px;
 }
 
 
