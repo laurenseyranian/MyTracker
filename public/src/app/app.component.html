@@ -4,7 +4,8 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <button class="btn text-light p-3" [routerLink]="['/home']">HOME<span class="sr-only">(current)</span></button>
+                    <button class="btn text-light p-3" [routerLink]="['/home']">HOME<span
+                            class="sr-only">(current)</span></button>
                 </li>
 
                 <li class="nav-item">
@@ -19,12 +20,17 @@
                     <button class="btn text-light p-3" [routerLink]="['/nutritionstop']">NUTRITION STOP</button>
                 </li>
 
-                <li class="nav-item moveLeft">
-                    <a class="btn btn-dark p-3" href="">SIGN UP</a>
+                <li class="nav-item">
+                        <button class="btn text-light p-3" [routerLink]="['/chatstop']">CHAT STOP</button>
+                </li>
+
+                <li class="nav-item moveSignIn">
+                    <a class="signIn btn btn-dark p-3" href="">SIGN UP</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link text-light ml-3 login" href=""><i class="glyphicon glyphicon-user mr-3"></i> LOGIN</a>
+                    <a class="nav-link text-light ml-3" href=""><i class="glyphicon glyphicon-user mr-3"></i>
+                        LOGIN</a>
                 </li>
 
             </ul>

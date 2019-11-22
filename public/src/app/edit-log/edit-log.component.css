@@ -33,15 +33,20 @@
     color: #177890;
     margin-left: 60px;
 }
-.button{
-    background-color: #80C141;
-    color: white;
-    margin-left: 150px;
-    margin-top: 40px;
-}
 .lunchy{
     margin-bottom: 18px;
 }
 .dinny{
     margin-bottom: 17px;
+}
+.submitButton{
+    background-color: #80C141;
+    color: white;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.cancelButton{
+    color: white;
+    margin-left: 150px;
+    margin-top: 40px;
 }

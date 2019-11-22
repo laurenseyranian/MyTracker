@@ -33,6 +33,7 @@
                     name='editlog.bedtime_snack' [(ngModel)]="editlog.bedtime_snack"
                     placeholder="Did you sneak in an evening? Don't lie..."></textarea>
         </div>
-        <button (click)="updateFoodlog()" class="btn button">SUBMIT</button>
+        <button (click)="updateFoodlog()" class="btn submitButton">SUBMIT</button>
+        <button class="btn btn-danger cancelButton ml-3" [routerLink]="['/journalstop']">CANCEL</button>
     </div>
 </div>

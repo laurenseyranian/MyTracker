@@ -14,8 +14,8 @@ const routes: Routes = [
     { path: 'foodstop', component: LogComponent },
     { path: 'nutritionstop', component: FactComponent },
     { path: 'journalstop', component: CalendarComponent },
-    { path: 'viewlog/:id', component: ViewLogComponent },
-    { path: 'editlog/:id', component: EditLogComponent },
+    { path: 'stopandview/:id', component: ViewLogComponent },
+    { path: 'stopandedit/:id', component: EditLogComponent },
     
 ];
 

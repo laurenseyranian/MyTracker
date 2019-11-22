@@ -1,20 +1,32 @@
 <p class="text-center" id='title'>STOP & VIEW</p>
 
 <div class="plateImage">
-    <p> DATE: {{ foodlog.date }}</p>
-    <p>BREAKFAST</p>
-    <p class="pt-1 pl-4">{{foodlog.breakfast}}</p>
-    <p class="pt-1 pl-5">SNACK</p>
-    <p class="pt-1 pl-5">{{foodlog.am_snack}}</p>
-
-    <p>LUNCH</p>
-    <p>{{foodlog.lunch}}</p>
-    <p>SNACK</p>
-    <p>{{foodlog.pm_snack}}</p>
-
-    <p>DINNER</p>
-    <p>{{foodlog.dinner}}</p>
-    <p>SNACK</p>
-    <p>{{foodlog.bedtime_snack}}</p>
-    <button class="btn btn-dark" [routerLink]="['/editlog/'+ foodlog._id]">EDIT</button>
+        <p class="date">Date: {{ foodlog.date | date:'fullDate'}}</p>
+        <div class="row">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="meal">BREAKFAST</th>
+                            <td class="item">{{foodlog.breakfast}}</td>
+                            <th scope="row" class="snack">MORNING SNACK</th>
+                            <td class="item">{{foodlog.am_snack}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="meal">LUNCH</th>
+                            <td class="item">{{foodlog.lunch}}</td>
+                            <th scope="row" class="snack">AFTERNOON SNACK</th>
+                            <td class="item">{{foodlog.pm_snack}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="meal">DINNER</th>
+                            <td class="item">{{foodlog.dinner}}</td>
+                            <th scope="row" class="snack">LATE NIGHT SNACK</th>
+                            <td class="item">{{foodlog.bedtime_snack}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    
+        <button class="btn btn-dark submitButton" [routerLink]="['/stopandedit/'+ foodlog._id]">EDIT</button>
+        <button class="btn btn-danger ml-3 cancelButton" [routerLink]="['/journalstop']">CANCEL</button>
 </div>

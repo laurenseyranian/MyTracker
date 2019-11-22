@@ -1,58 +1,35 @@
 <p class="text-center" id='title'>JOURNAL STOP</p>
 <div class="journalImage">
-    <p class="pt-5 pl-3">DATE: {{ foodlog.date }}</p>
-    <ul *ngFor="let foodlog of foodlogs">
-        <li>BREAKFAST</li>
-        <li class="pt-1 pl-4">{{foodlog.breakfast}}</li>
-        <li class="pt-1 pl-5">SNACK</li>
-        <li class="pt-1 pl-5">{{foodlog.am_snack}}</li>
-
-        <li>LUNCH</li>
-        <li>{{foodlog.lunch}}</li>
-        <li>SNACK</li>
-        <li>{{foodlog.pm_snack}}</li>
-
-        <li>DINNER</li>
-        <li>{{foodlog.dinner}}</li>
-        <li>SNACK</li>
-        <li>{{foodlog.bedtime_snack}}</li>
-    </ul>
+    <div *ngFor="let foodlog of foodlogs">
+        <p [routerLink]="['/stopandview/' + foodlog._id]" class="date pt-5 pl-3">DATE: {{ foodlog.date | date:'fullDate'}}
+        </p>
+        <div class="row">
+            <table>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="meal">BREAKFAST</th>
+                        <td class="item">{{foodlog.breakfast}}</td>
+                        <th scope="row" class="snack">MORNING SNACK</th>
+                        <td class="item">{{foodlog.am_snack}}</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="meal">LUNCH</th>
+                        <td class="item">{{foodlog.lunch}}</td>
+                        <th scope="row" class="snack">AFTERNOON SNACK</th>
+                        <td class="item">{{foodlog.pm_snack}}</td>
+                        <td><button class="btn btn-danger deleteButton" (click)="deleteFoodlog(foodlog)">DELETE</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="meal">DINNER</th>
+                        <td class="item">{{foodlog.dinner}}</td>
+                        <th scope="row" class="snack">LATE NIGHT SNACK</th>
+                        <td class="item">{{foodlog.bedtime_snack}}</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
-
-
-
-
-
-
-
-
-<!-- <div>
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">Date</th>
-                <th scope="col">Breakfast</th>
-                <th scope="col">Snack</th>
-                <th scope="col">Lunch</th>
-                <th scope="col">Snack</th>
-                <th scope="col">Dinner</th>
-                <th scope="col">Snack</th>
-                <th scope="col">Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            FOR LOOP
-
-            <tr *ngFor="let foodlog of foodlogs">
-                <td>{{ foodlog.date }}</td>
-                <td>{{ foodlog.breakfast }}</td>
-                <td>{{ foodlog.am_snack }}</td>
-                <td>{{ foodlog.lunch }}</td>
-                <td>{{ foodlog.pm_snack }}</td>
-                <td>{{ foodlog.dinner }}</td>
-                <td>{{ foodlog.bedtime_snack }}</td>
-                <td><button class="btn" [routerLink]="['/viewlog/'+foodlog._id]">VIEW</button><button class="btn btn-outline-danger" (click)="deleteFoodlog(foodlog)">DELETE</button></td>
-            </tr>
-        </tbody>
-    </table>
-</div> -->

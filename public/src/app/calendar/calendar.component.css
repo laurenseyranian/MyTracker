@@ -13,11 +13,37 @@
     width: 1000px;
     height: 1000px;
     margin-top: -20px;
+    overflow-y: scroll;
 }
-p{
+.date{
     font-size: 20px;
     color: #177890;
+    margin-left: 30px;
+    font-weight: bolder;
+}
+td{
+    width: 210px;
+    padding-left: 20px;
+}
+.row{
     margin-left: 50px;
 }
+.meal{
+    font-size: 20px;
+    color: #80C141;
+}
+.snack{
+    font-size: 20px;
+    color: #80C141;
+}
+.item{
+    font-size: 20px;
+    color: #177890;
+}
+.deleteButton{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
 
 
