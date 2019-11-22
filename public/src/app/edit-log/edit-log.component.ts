@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../http.service';
 import { Params, ActivatedRoute, Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-edit-log',
   templateUrl: './edit-log.component.html',
@@ -13,8 +12,6 @@ export class EditLogComponent implements OnInit {
   errors = [];
   foodlogId;
   editlog: any = { date: "", breakfast: "", am_snack: "", lunch: "", pm_snack: "", dinner: "", bedtime_snack: "" }
-  foodlogs;
-  foodlog: any = {date: "", breakfast:"", am_snack:"", lunch:"", pm_snack:"", dinner:"", bedtime_snack:""}
 
   constructor(
     private _httpService: HttpService,
@@ -23,18 +20,20 @@ export class EditLogComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    console.log("in edit component");
     this._route.params.subscribe((params:Params)=>{
       this.foodlogId = params['id']
     });
+    this.readFoodlog();
   }
   readFoodlog() {
-    console.log("in component, a-update: ", this.foodlogId)
+    console.log("getting foodlog", this.foodlogId)
     let observable = this._httpService.readFoodlog(this.foodlogId);
     observable.subscribe(data => {
-      this.foodlog = data;
+      this.editlog = data;
     });
   }
-  updatefoodlog(){
+  updateFoodlog(){
     console.log("in component, edit-log: ", this.editlog)
     let observable = this._httpService.updateFoodlog(this.editlog);
     observable.subscribe(data => {
@@ -42,16 +41,11 @@ export class EditLogComponent implements OnInit {
       if (data['errors']){
         this.errors = data['errors']
       }else{
-        this.getAllFoodLogs();
+        this.goBackToJournal();
       }
     });
   }
-  getAllFoodLogs(){
-    console.log("in component, calendar: ", this.foodlogs)
-    let observable = this._httpService.readFoodlogs();
-    observable.subscribe(data => {
-      console.log("Got our foodlogs!", data)
-      this.foodlogs = data;
-    });
+  goBackToJournal(){
+    this._router.navigate(['/journalstop']);
   }
 }
