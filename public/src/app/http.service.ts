@@ -19,5 +19,8 @@ export class HttpService {
   log() {
     return this._http.get('/log_json');
   }
+  addLog(){
+    return this._http.get('/log_json');
+  }
 
 }
