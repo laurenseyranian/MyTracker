@@ -4,9 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-import { DateAdapter } from 'angular-calendar';
-import { AdapterFactory } from 'angular-calendar/date-adapters/date-fns';
-import { CalendarModule } from 'angular-calendar';
+// import { CalendarModule } from 'angular-calendar';
 import { MonthCalendarModule } from 'simple-angular-calendar';
 
 import { AppComponent } from './app.component';
@@ -19,11 +17,8 @@ import { ViewLogComponent } from './view-log/view-log.component';
 @NgModule({
   declarations: [
     AppComponent,
-    DateAdapter,
-    AdapterFactory,
-    CalendarModule,
+    // CalendarModule,
     CalendarComponent,
-    MonthCalendarModule,
     HomeComponent,
     LogComponent,
     EditLogComponent,
@@ -31,6 +26,7 @@ import { ViewLogComponent } from './view-log/view-log.component';
   ],
   imports: [
     BrowserModule,
+    MonthCalendarModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,

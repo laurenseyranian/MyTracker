@@ -1,5 +1,4 @@
-const mongoose = require('mongoose');
-const controller = require('../../controller/controller.js')
+const controller = require('../../controller/controller')
 const router = require('express').Router();
 
 module.exports = router
