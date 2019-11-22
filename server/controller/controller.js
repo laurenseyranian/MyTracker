@@ -1,3 +1,6 @@
+const mongoose = require('mongoose');
+const FoodLog = mongoose.model("FoodLog");
+
 module.exports = {
   index(request, response) {
     FoodLog.find()
@@ -15,17 +18,17 @@ module.exports = {
       .catch(err => response.json(err));
   },
   read_one(request, response) {
-    Foodlog.findById(request.params.id)
+    FoodLog.findById(request.params.id)
       .then(foodlog => response.json(foodlog))
       .catch(err => res.json(err));
   },
   update(request, response) {
-    Foodlog.findByIdAndUpdate(request.params.id, request.body, { new: true, runValidators: true, context: 'query' })
+    FoodLog.findByIdAndUpdate(request.params.id, request.body, { new: true, runValidators: true, context: 'query' })
       .then(foodlog => response.json(foodlog))
       .catch(err => response.json(err));
   },
   delete_by_id(req, res) {
-    Foodlog.remove({_id : req.params.id})
+    FoodLog.remove({_id : req.params.id})
     .then(foodlog => res.json(foodlog))
     .catch(err => res.json(err));
   },

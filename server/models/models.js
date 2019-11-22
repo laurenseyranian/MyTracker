@@ -2,6 +2,10 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const FoodLogSchema = new Schema({
+  date: {
+    type: Date,
+    required: [true, "Date required"],
+  },
   breakfast: {
     type: String,
     minlength: [3, "Food entry must have more than 3 characters"],
