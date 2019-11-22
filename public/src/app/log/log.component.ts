@@ -30,11 +30,11 @@ export class LogComponent implements OnInit {
       }else{
         this.errors = [];
         this.newFoodlog = {date: "", breakfast:"", am_snack:"", lunch:"", pm_snack:"", dinner:"", bedtime_snack:""}
-        this.gotoCalendar();
+        this.gotoJournal();
       }
     })
   }
-  gotoCalendar(){    
-    this._router.navigate(['/calendarstop'])
+  gotoJournal(){    
+    this._router.navigate(['/journalstop'])
   }
 }

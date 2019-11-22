@@ -10,6 +10,7 @@
                 <th scope="col">Snack</th>
                 <th scope="col">Dinner</th>
                 <th scope="col">Snack</th>
+                <th scope="col">Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -23,6 +24,7 @@
                 <td>{{ foodlog.pm_snack }}</td>
                 <td>{{ foodlog.dinner }}</td>
                 <td>{{ foodlog.bedtime_snack }}</td>
+                <td><button class="btn" [routerLink]="['/viewlog/'+foodlog._id]">VIEW</button><button class="btn btn-outline-danger" (click)="deleteFoodlog(foodlog)">DELETE</button></td>
             </tr>
         </tbody>
     </table>
