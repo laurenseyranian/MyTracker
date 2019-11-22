@@ -3,4 +3,33 @@
     background-size:cover; width:auto;
     background-image:url('/assets/images/home.jpg');
     background-position:50% 50%;
-  }
+}
+img{
+    width: 900px;
+    height: 300px;
+    margin-left: -300px;
+    margin-top: -100px;
+    display: inline-block;
+}
+.navbar{
+    vertical-align: top;
+    margin-left: -270px;
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    display: inline-block;
+}
+.moveLeft{
+    margin-left: 400px;
+}
+.btn{
+    height: 40px;
+}
+.glyphicon{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+}
+.login{
+    margin-top: -10px;
+}

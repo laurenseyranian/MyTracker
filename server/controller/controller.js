@@ -5,5 +5,7 @@ module.exports = {
     },
     log: function(req,res){
     }, 
+    fact: function(req,res){
+    }, 
 
 };
