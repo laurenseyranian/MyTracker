@@ -14,6 +14,7 @@ import { LogComponent } from './log/log.component';
 import { EditLogComponent } from './edit-log/edit-log.component';
 import { ViewLogComponent } from './view-log/view-log.component';
 import { FactComponent } from './fact/fact.component';
+import { ChatroomComponent } from './chatroom/chatroom.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FactComponent } from './fact/fact.component';
     LogComponent,
     EditLogComponent,
     ViewLogComponent,
-    FactComponent
+    FactComponent,
+    ChatroomComponent
   ],
   imports: [
     BrowserModule,

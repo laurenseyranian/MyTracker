@@ -5,6 +5,7 @@ import { LogComponent } from './log/log.component';
 import { FactComponent } from './fact/fact.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { ViewLogComponent } from './view-log/view-log.component';
+import { ChatroomComponent } from './chatroom/chatroom.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
     { path: 'nutritionstop', component: FactComponent },
     { path: 'journalstop', component: CalendarComponent },
     { path: 'viewlog/:id', component: ViewLogComponent },
+    { path: 'chatroom', component: ChatroomComponent },
     
 ];
 
