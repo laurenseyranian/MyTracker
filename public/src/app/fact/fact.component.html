@@ -1,0 +1,11 @@
+<p class="text-center" id='title'>NUTRITION STOP</p>
+<p class="text-center" id="text">Take a mental stop to read about nutrition, fitness, and overall wellness to support your journey. </p>
+<div class="box">
+    <p class="info text-center">New York Times articles will be shared daily. Click a title of your choosing to be directed to the full article.</p>
+    <div *ngFor="let article of articles.response.docs">
+        <ul class="ulist">
+            <li><a href="{{ article.web_url }}"><p class="articleTitle">{{ article.headline.main }}</p><p class="articleDate">Published on: ({{article.pub_date}})</p><p class="articleSnippet"> {{article.snippet }}</p>
+    </a></li>
+        </ul>
+    </div>
+</div>

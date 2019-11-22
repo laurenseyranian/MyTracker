@@ -20,10 +20,11 @@ img{
     display: inline-block;
 }
 .moveLeft{
-    margin-left: 400px;
+    margin-left: 200px;
 }
 .btn{
     height: 40px;
+    font-size: 25px;
 }
 .glyphicon{
     width: 10px;

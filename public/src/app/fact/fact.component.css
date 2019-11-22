@@ -1,0 +1,47 @@
+#title{
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 80px;
+    color: #80C141;
+    margin-top: -130px;
+}
+#text{
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 35px;
+    color: white;
+    margin-top: -20px;
+}
+.box{
+    margin-left: 70px;
+    width: 1300px;
+    height: 1050px;
+    background-color: #177890b4;
+    margin-top: -10px;
+}
+.info{
+    font-size: 25px;
+    color: #BF0B06;
+    padding-top: 10px;
+}
+.articleTitle{
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    color: #80C141;
+    font-size: 20px;
+    padding-top: 15px;
+    font-weight: bolder;
+}
+.articleDate{
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    color: #80C141;
+    font-size: 15px;
+}
+.articleSnippet{
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    color: white;
+    font-size: 20px;
+    padding-left: 70px;
+}
+.ulist{
+    list-style-type: square;
+    padding-left: 50px;
+    color: white;
+}
