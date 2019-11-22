@@ -1,5 +1,32 @@
+<p class="text-center" id='title'>JOURNAL STOP</p>
+<div class="journalImage">
+    <p class="pt-5 pl-3">DATE: {{ foodlog.date }}</p>
+    <ul *ngFor="let foodlog of foodlogs">
+        <li>BREAKFAST</li>
+        <li class="pt-1 pl-4">{{foodlog.breakfast}}</li>
+        <li class="pt-1 pl-5">SNACK</li>
+        <li class="pt-1 pl-5">{{foodlog.am_snack}}</li>
 
-<div>
+        <li>LUNCH</li>
+        <li>{{foodlog.lunch}}</li>
+        <li>SNACK</li>
+        <li>{{foodlog.pm_snack}}</li>
+
+        <li>DINNER</li>
+        <li>{{foodlog.dinner}}</li>
+        <li>SNACK</li>
+        <li>{{foodlog.bedtime_snack}}</li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+<!-- <div>
     <table class="table">
         <thead>
             <tr>
@@ -14,7 +41,7 @@
             </tr>
         </thead>
         <tbody>
-            <!-- FOR LOOP -->
+            FOR LOOP
 
             <tr *ngFor="let foodlog of foodlogs">
                 <td>{{ foodlog.date }}</td>
@@ -28,4 +55,4 @@
             </tr>
         </tbody>
     </table>
-</div>
+</div> -->

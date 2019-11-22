@@ -1,4 +1,4 @@
-.logImage{
+.plateImage{
     background-image:url('/assets/images/plate.png');
     background-size:cover;
     background-position:50% 50%;
@@ -36,7 +36,7 @@
 .button{
     background-color: #80C141;
     color: white;
-    margin-left: 150px;
+    margin-left: 140px;
     margin-top: 40px;
 }
 .lunchy{
