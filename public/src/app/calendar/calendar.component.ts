@@ -24,5 +24,11 @@ export class CalendarComponent implements OnInit {
       this.foodlogs = data;
     });
   }
+  deleteFoodlog(foodlog){
+    let observable = this._httpService.deleteFoodlog(foodlog._id);
+    observable.subscribe(data => {
+      this.getAllFoodLogs();
+    });
+  }
 
 }
