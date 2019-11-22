@@ -28,7 +28,7 @@ module.exports = {
   },
   delete_by_id(req, res) {
     Foodlog.remove({_id : req.params.id})
-    .then(restaurants => res.json(restaurants))
+    .then(foodlog => res.json(foodlog))
     .catch(err => res.json(err));
   },
 };
