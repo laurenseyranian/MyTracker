@@ -23,4 +23,5 @@ export class HttpService {
   deleteFoodlog(id){
     return this._http.delete(`/foodlogs_json/${id}/delete`);
   }
+
 }

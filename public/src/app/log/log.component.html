@@ -2,14 +2,14 @@
     <h2 class='title'> Food Log</h2>
     <div class="input-group flex-nowrap">
         <div class="input-group-prepend">
-            <span class="input-group-text" id="addon-wrapping">Morning</span>
+            <span class="input-group-text" id="addon-wrapping">Breakfast</span>
         </div>
-        <input type="text" name='' placeholder="">
+        <input type="text" name='create.breakfast' [(ngModel)]="create.breakfast" placeholder="What did you eat this morning?">
 
         <div class="input-group-prepend">
             <span class="input-group-text" id="addon-wrapping">Snack</span>
         </div>
-        <input type="text" name='' placeholder="">
+        <input type="text" name='create.am_snack' [(ngModel)]="create.am_snack" placeholder="What snacks did you eat this morning?">
     </div>
 </div>
 <div class='lunch'>
@@ -17,12 +17,12 @@
         <div class="input-group-prepend">
             <span class="input-group-text" id="addon-wrapping">Lunch</span>
         </div>
-        <input type="text" name='' placeholder="">
+        <input type="text" name='create.lunch' [(ngModel)]="create.lunch" placeholder="What did you eat this afternoon?">
 
         <div class="input-group-prepend">
             <span class="input-group-text" id="addon-wrapping">Snack</span>
         </div>
-        <input type="text" name='' placeholder="">
+        <input type="text" name='create.pm_snack' [(ngModel)]="create.pm_snack" placeholder="what snacks did you eat this afternoon?">
     </div>
 </div>
 
@@ -31,12 +31,12 @@
         <div class="input-group-prepend">
             <span class="input-group-text" id="addon-wrapping">Dinner</span>
         </div>
-        <input type="text" name='' placeholder="">
+        <input type="text" name='create.dinner' [(ngModel)]="create.dinner" placeholder="What did you eat this evening?">
 
         <div class="input-group-prepend">
             <span class="input-group-text" id="addon-wrapping">Snack</span>
         </div>
-        <input type="text" name='' placeholder="">
+        <input type="text" name='create.bedtime_snack' [(ngModel)]="create.bedtime_snack" placeholder="Did you sneak in a snack this evening? Don you tell me a lie either...">
     </div>
     <div class='button'>
         <button (click)="addLog()" class="btn btn-light">Create</button>
