@@ -1,14 +1,4 @@
 module.exports = {
-    home: function (req, res) {
-    },
-    calendar: function(req,res){
-    },
-    log: function(req,res){
-    }, 
-    fact: function(req,res){
-    }, 
-
-module.exports = {
   index(request, response) {
     FoodLog.find()
       .then(foodlogs => response.json(foodlogs))

@@ -13,6 +13,7 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { LogComponent } from './log/log.component';
 import { EditLogComponent } from './edit-log/edit-log.component';
 import { ViewLogComponent } from './view-log/view-log.component';
+import { FactComponent } from './fact/fact.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ViewLogComponent } from './view-log/view-log.component';
     LogComponent,
     EditLogComponent,
     ViewLogComponent,
+    FactComponent
   ],
   imports: [
     BrowserModule,
