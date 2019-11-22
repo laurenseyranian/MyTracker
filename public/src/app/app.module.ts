@@ -4,8 +4,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-// import { CalendarModule } from 'angular-calendar';
-import { MonthCalendarModule } from 'simple-angular-calendar';
+// ChatBot
+// import {ChatBot} from 'angular-ai-chat-bot';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -18,7 +18,10 @@ import { FactComponent } from './fact/fact.component';
 @NgModule({
   declarations: [
     AppComponent,
-    // CalendarModule,
+
+    // ChatBot
+    // ChatBot,
+
     CalendarComponent,
     HomeComponent,
     LogComponent,
@@ -28,7 +31,6 @@ import { FactComponent } from './fact/fact.component';
   ],
   imports: [
     BrowserModule,
-    MonthCalendarModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,

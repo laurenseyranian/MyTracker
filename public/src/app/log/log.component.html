@@ -2,35 +2,37 @@
 
 <div class="logImage">
     <div class="box">
-        <div>
-            <input type="date"class="form-control col-5" name='newFoodlog.date' [(ngModel)]="newFoodlog.date"
+        <div class="date row">
+            <p class="boxText1 d-inline-block"> Date </p><input type="date"class="d-inline-block form-control col-7" name='newFoodlog.date' [(ngModel)]="newFoodlog.date"
             placeholder="">
         </div>
 
         <div class='morning'>
-            <p class="boxText">Breakfast <textarea class="form-control col-3" id="exampleFormControlTextarea1" rows="3"
+            <p class="boxText d-inline-block">Breakfast </p><textarea class="d-inline-block form-control col-10" id="boxTextBody" rows="3"
                     name='newFoodlog.breakfast' [(ngModel)]="newFoodlog.breakfast"
-                    placeholder="What did you eat this morning?"></textarea></p>
-            <p class="boxText1">Snack <textarea class="form-control col-2" id="exampleFormControlTextarea1" rows="2"
+                    placeholder="What did you eat this morning?"></textarea>
+            <p class="boxText1 d-inline-block">Snack </p><textarea class="d-inline-block form-control col-7" id="exampleFormControlTextarea1" rows="2"
                     name='newFoodlog.am_snack' [(ngModel)]="newFoodlog.am_snack"
-                    placeholder="What snacks did you eat this morning?"></textarea></p>
+                    placeholder="What snacks did you eat this morning?"></textarea>
         </div>
 
         <div class='lunch'>
-            <p class="boxText">Lunch <textarea class="form-control col-3" id="exampleFormControlTextarea1" rows="3"
+            <p class="boxText d-inline-block lunchy">Lunch </p><textarea class="d-inline-block form-control col-10" id="exampleFormControlTextarea1" rows="3"
                     name='newFoodlog.dinner' [(ngModel)]="newFoodlog.dinner"
-                    placeholder="What did you eat this evening?"></textarea></p>
-            <p class="boxText1">Snack <textarea class="form-control col-2" id="exampleFormControlTextarea1" rows="2"
+                    placeholder="What did you eat this evening?"></textarea>
+            <p class="boxText1 d-inline-block">Snack </p><textarea class="d-inline-block form-control col-7" id="exampleFormControlTextarea1" rows="2"
                     name='newFoodlog.pm_snack' [(ngModel)]="newFoodlog.pm_snack"
-                    placeholder="what snacks did you eat this afternoon?"></textarea></p>
+                    placeholder="What snacks did you eat this afternoon?"></textarea>
         </div>
 
         <div class='dinner'>
-            <p class="boxText">Dinner <textarea class="form-control col-3" id="exampleFormControlTextarea1" rows="3"
+            <p class="boxText d-inline-block dinny">Dinner </p><textarea class="d-inline-block form-control col-10" id="exampleFormControlTextarea1" rows="3"
                     name='newFoodlog.dinner' [(ngModel)]="newFoodlog.dinner"
-                    placeholder="What did you eat this evening?"></textarea></p>
-            <p class="boxText1">Snack <textarea class="form-control col-2" id="exampleFormControlTextarea1" rows="2"
+                    placeholder="What did you eat this evening?"></textarea>
+            <p class="boxText1 d-inline-block">Snack </p><textarea class="d-inline-block form-control col-7" id="exampleFormControlTextarea1" rows="2"
                     name='newFoodlog.bedtime_snack' [(ngModel)]="newFoodlog.bedtime_snack"
-                    placeholder="Did you sneak in a snack this evening? Don't lie..."></textarea></p>
+                    placeholder="Did you sneak in an evening? Don't lie..."></textarea>
         </div>
         <button (click)="createFoodLog()" class="btn button">SUBMIT</button>
+    </div>
+</div>

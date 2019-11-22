@@ -6,8 +6,6 @@ import { FactComponent } from './fact/fact.component';
 import { CalendarComponent } from './calendar/calendar.component';
 
 
-
-
 const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'home', component: HomeComponent },
